@@ -81,11 +81,6 @@
 					<label class="fs-6 mb-2" for="decal" style="color: #fff; font-weight: bold;">Decal</label>
 					<select class="form-select col-sm-6 mb-3" id="decal" name="decal" required disabled>
 						<option selected disabled hidden value="">Escolher</option>
-						<option value="Nenhum"
-						<% if (request.getParameter("cor") != null && request.getParameter("cor").equals("Nenhuma")) { %> 
-							selected
-						<% } %>
-						>Nenhum</option>
 						<%
 						for (String[] decal : attr.decals){
 							out.println("<option value=\""+decal[0]+"\""+
